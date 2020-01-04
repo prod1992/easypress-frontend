@@ -1,0 +1,17 @@
+.btn-primary-gradient {
+  background: rgb(80, 68, 255);
+  background: -moz-linear-gradient(90deg, rgba(80, 68, 255, 1) 0%, rgba(105, 91, 255, 1) 35%, rgba(135, 120, 255, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(80, 68, 255, 1) 0%, rgba(105, 91, 255, 1) 35%, rgba(135, 120, 255, 1) 100%);
+  background: linear-gradient(90deg, rgba(80, 68, 255, 1) 0%, rgba(105, 91, 255, 1) 35%, rgba(135, 120, 255, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5044ff", endColorstr="#8778ff", GradientType=1);
+  color: #ffffff;
+
+  @include hover-focus-active {
+    opacity: .9;
+    color: #ffffff;
+  }
+  &[disabled] {
+    opacity: .3;
+    color: #ffffff;
+  }
+}

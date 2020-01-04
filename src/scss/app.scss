@@ -2,15 +2,16 @@
 
 /* Core variables */
 @import 'base/vars';
-
-/* CSS Reset */
-@import 'base/reset';
+@import "~bootstrap/scss/bootstrap";
 
 /* CSS print */
 @import 'base/print';
 
 /* Fonts */
 @import 'base/fonts';
+
+/* Buttons */
+@import 'base/buttons';
 
 /* Mixins, helpers and functions */
 @import 'base/mixins';
@@ -28,6 +29,4 @@ body {
   background: $body-background-color;
   color: $foreground-color;
 }
-
-@import "~bootstrap/scss/bootstrap";
 @import "login";

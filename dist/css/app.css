@@ -10,199 +10,6 @@
 /* Grid setup */
 /* Colour palette */
 /* Components */
-/* CSS Reset */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  border: none;
-  font: inherit;
-  font-size: 100%;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline; }
-
-html {
-  box-sizing: border-box; }
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit; }
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary,
-main {
-  display: block; }
-
-audio,
-canvas,
-video {
-  display: inline-block; }
-
-body {
-  margin: 0; }
-
-ul {
-  list-style-type: none; }
-
-a {
-  background: transparent;
-  text-decoration: none; }
-
-button,
-input {
-  line-height: normal; }
-
-input[type='search'] {
-  -webkit-appearance: textfield; }
-
-input[type='search']::-webkit-search-decoration,
-input[type='search']::-webkit-search-cancel-button {
-  -webkit-appearance: none; }
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0; }
-
-textarea {
-  overflow: auto;
-  vertical-align: top; }
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto; }
-
-textarea:focus,
-input:focus {
-  outline: 0; }
-
-/* CSS print */
-/**
- * Print Stylesheet
-*/
-@media print {
-  @page {
-    margin: 1cm; }
-  body {
-    background: #fff;
-    color: #000; }
-  a {
-    page-break-inside: avoid; }
-  blockquote {
-    page-break-inside: avoid; }
-  table,
-  pre {
-    page-break-inside: avoid; }
-  ul, ol, dl {
-    page-break-before: avoid; } }
-
-/* Fonts */
-/**
- * Fonts
-*/
-/* Mixins, helpers and functions */
-/**
- * Helper mixins
-*/
-/* Vendor */
-/* Components */
-/* Browser specific styles */
-/**
- * Dirty hacks, yes internet explorer, we are looking at you
-*/
-/* Demo styles */
-body {
-  background: #fff;
-  color: #222222; }
-
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -1811,19 +1618,19 @@ pre {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(79, 66, 255, 0.25); }
   .form-control::-webkit-input-placeholder {
-    color: #6c757d;
+    color: #ced4da;
     opacity: 1; }
   .form-control::-moz-placeholder {
-    color: #6c757d;
+    color: #ced4da;
     opacity: 1; }
   .form-control:-ms-input-placeholder {
-    color: #6c757d;
+    color: #ced4da;
     opacity: 1; }
   .form-control::-ms-input-placeholder {
-    color: #6c757d;
+    color: #ced4da;
     opacity: 1; }
   .form-control::placeholder {
-    color: #6c757d;
+    color: #ced4da;
     opacity: 1; }
   .form-control:disabled, .form-control[readonly] {
     background-color: #e9ecef;
@@ -7874,6 +7681,59 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+/* CSS print */
+/**
+ * Print Stylesheet
+*/
+@media print {
+  @page {
+    margin: 1cm; }
+  body {
+    background: #fff;
+    color: #000; }
+  a {
+    page-break-inside: avoid; }
+  blockquote {
+    page-break-inside: avoid; }
+  table,
+  pre {
+    page-break-inside: avoid; }
+  ul, ol, dl {
+    page-break-before: avoid; } }
+
+/* Fonts */
+/**
+ * Fonts
+*/
+/* Buttons */
+.btn-primary-gradient {
+  background: #5044ff;
+  background: -webkit-gradient(linear, left top, right top, from(#5044ff), color-stop(35%, #695bff), to(#8778ff));
+  background: linear-gradient(90deg, #5044ff 0%, #695bff 35%, #8778ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5044ff", endColorstr="#8778ff", GradientType=1);
+  color: #ffffff; }
+  .btn-primary-gradient:hover, .btn-primary-gradient:focus, .btn-primary-gradient:active {
+    opacity: .9;
+    color: #ffffff; }
+  .btn-primary-gradient[disabled] {
+    opacity: .3;
+    color: #ffffff; }
+
+/* Mixins, helpers and functions */
+/**
+ * Helper mixins
+*/
+/* Vendor */
+/* Components */
+/* Browser specific styles */
+/**
+ * Dirty hacks, yes internet explorer, we are looking at you
+*/
+/* Demo styles */
+body {
+  background: #fff;
+  color: #222222; }
+
 .ep-login {
   display: -webkit-box;
   display: flex;
@@ -7888,22 +7748,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .form-signin {
   width: 100%;
-  max-width: 330px;
   padding: 50px 30px 30px;
   margin: auto;
   background-color: #ffffff;
   box-shadow: 1px 1px 4px #00000014; }
-
-.form-signin .checkbox {
-  font-weight: 400; }
-
-.form-signin .form-control {
-  position: relative;
-  box-sizing: border-box;
-  height: auto;
-  padding: 10px;
-  font-size: 16px; }
-
-.form-signin .form-control:focus {
-  z-index: 2; }
 
