@@ -27,20 +27,8 @@
 body {
   background: $body-background-color;
   color: $foreground-color;
-  font-family: 'DINP-R', arial, serif;
+  font-family: 'Roboto', sans-serif;
 }
 
-header {
-  font-size: 2em;
-  margin: 20px;
-  color: $caption-color;
-  text-align: center;
-  background: $foreground-color url('../images/design/heading.png') center 20px no-repeat;
-  padding: 60px 30px 30px;
-  background-size: 160px;
-}
-
-.logo {
-  margin: 0 auto;
-  display: block;
-}
+@import "~bootstrap/scss/bootstrap";
+@import "login";

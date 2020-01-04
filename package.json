@@ -40,7 +40,10 @@
     "node": ">=10.13.0"
   },
   "dependencies": {
-    "autoprefixer": "^9.7.3"
+    "autoprefixer": "^9.7.3",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
